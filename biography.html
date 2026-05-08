@@ -39,34 +39,32 @@
     <div class="editorial-banner-text">LIFE</div>
   </header>
 
-  <!-- bradbury-style editorial layout -->
+  <!-- bradbury-style editorial layout: row 1 = name + quote, row 2 = portrait + body -->
   <section class="mag-layout fade-on-scroll">
     <div class="mag-inner">
 
-      <!-- left column: name, dates, portrait -->
-      <div class="mag-left">
+      <header class="mag-left-head">
         <p class="mag-name">Mahatma Gandhi</p>
         <p class="mag-dates">1869 &mdash; Forever</p>
-        <div class="mag-portrait-wrap">
-          <img src="images/biography/GandhiLawyer.jpg" alt="Mahatma Gandhi" class="mag-portrait" />
-        </div>
+      </header>
+
+      <p class="mag-pullquote">
+        &ldquo;The trick is, knowing how to tip ourselves over and let the beautiful stuff out.&rdquo;
+      </p>
+
+      <div class="mag-portrait-wrap">
+        <img src="images/biography/GandhiLawyer.jpg" alt="Mahatma Gandhi" class="mag-portrait" />
       </div>
 
-      <!-- right column: pull quote + body text + floating image -->
-      <div class="mag-right">
-        <p class="mag-pullquote">
-          &ldquo;The trick is, knowing how to tip ourselves over and let the beautiful stuff out.&rdquo;
-        </p>
+      <div class="mag-body-wrap">
 
-        <div class="mag-body-wrap">
+        <!-- floating image sits inside the text flow -->
+        <div class="mag-float-img">
+          <img src="images/biography/Gandhiwriting.jpg" alt="Gandhi's handwritten letter" />
+          <span class="mag-float-caption">Gandhi's handwritten letter, 1930</span>
+        </div>
 
-          <!-- floating image sits inside the text flow -->
-          <div class="mag-float-img">
-            <img src="images/biography/Gandhiwriting.jpg" alt="Gandhi's handwritten letter" />
-            <span class="mag-float-caption">Gandhi's handwritten letter, 1930</span>
-          </div>
-
-          <p class="mag-body">
+        <p class="mag-body">
             Mahatma Gandhi was born October 2, 1869, in Porbandar, India. He became
             the leader of India's nonviolent independence movement against British rule
             and is known worldwide for his philosophy of peaceful resistance — a concept
@@ -103,7 +101,6 @@
             </p>
           </div>
         </div>
-      </div>
 
     </div>
   </section>
