@@ -14,6 +14,9 @@
   --texture-dots: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.055) 1px, transparent 0);
   --texture-dots-size: 28px 28px;
 
+  /* Flat bars (nav, mobile menu, footer) — no dot texture */
+  --bar-surface: #1a1a1a;
+
   --font-display : 'Playfair Display', Georgia, serif;
   --font-body    : 'Lato', Arial, sans-serif;
 
@@ -57,7 +60,6 @@ ul  { list-style: none; }
 .why-section,
 .inspire-section,
 .form-section,
-.site-footer,
 .bio-section--dark,
 .bio-section--navy,
 .bio-significance,
@@ -172,12 +174,12 @@ ul  { list-style: none; }
 .reflection-page .navbar,
 .challenges-page .navbar,
 .impact-page .navbar {
-  background-color: #1a1a1a;
+  background-color: var(--bar-surface);
   background-image: none;
 }
 
 .navbar.scrolled {
-  background-color: #1a1a1a;
+  background-color: var(--bar-surface);
   background-image: none;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
@@ -899,6 +901,8 @@ a.nav-logo:focus-visible {
 
 
 .site-footer {
+  background-color: var(--bar-surface);
+  background-image: none;
   padding: var(--space-lg) var(--space-md);
   border-top: 3px solid var(--saffron);
 }
@@ -2248,7 +2252,7 @@ a.footer-logo:focus-visible {
     position: absolute;
     top: var(--nav-height);
     left: 0; right: 0;
-    background-color: #1a1a1a;
+    background-color: var(--bar-surface);
     background-image: none;
     padding: var(--space-sm) var(--space-md) var(--space-md);
     gap: var(--space-sm);
