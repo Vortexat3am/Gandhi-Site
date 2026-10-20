@@ -2646,6 +2646,50 @@ a.footer-logo:focus-visible {
   color: var(--dark);
 }
 
+.impact-page .why-section .why-inner {
+  max-width: 1200px;
+  justify-content: flex-start;
+}
+
+.impact-page .why-section .why-content {
+  width: min(100%, 1040px);
+}
+
+.impact-page .why-section .why-heading {
+  max-width: none;
+  font-size: clamp(2.5rem, 4.5vw, 5rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.impact-page .why-section .why-body {
+  max-width: 85ch;
+}
+
+.impact-page .bio-significance .bio-sig-inner {
+  max-width: 1200px;
+  padding-left: 0;
+}
+
+.impact-page .bio-significance .why-flag-stripe {
+  display: none;
+}
+
+.impact-page .bio-significance .bio-sig-content {
+  max-width: 1040px;
+}
+
+.impact-page .bio-significance .why-heading {
+  max-width: none;
+  font-size: clamp(2.75rem, 5vw, 5rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.impact-page .bio-significance .why-body {
+  max-width: 85ch;
+}
+
 .impact-page .bio-significance .source-block--light {
   border-top-color: rgba(0, 0, 0, 0.12);
 }
